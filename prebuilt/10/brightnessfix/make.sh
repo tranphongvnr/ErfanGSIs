@@ -17,7 +17,7 @@ mkdir -p "$TMPDIR/original_dex"
 CLASSES=$(ls "$TMPDIR/original_dex/classes"*)
 for CLASS in $CLASSES; do
     java -jar "$BAKSMALIJAR" disassemble "$CLASS" -o "$TMPDIR/dexout"
-    LightImpl=$(grep  ".method private setLightLocked(IIIII)V" "$TMPDIR"/dexout/com/android/server/lights/ -ri | cut -d ":" -f 1)
+    LightImpl=$(grep  ".method private setLightLocked(IIIIIZ)V" "$TMPDIR"/dexout/com/android/server/lights/ -ri | cut -d ":" -f 1)
     if [[ ! $LightImpl == "" ]]; then
         cp $LightImpl "$TMPDIR"/LightImpl.smali
         rm $LightImpl

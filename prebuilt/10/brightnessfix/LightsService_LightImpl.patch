@@ -137,7 +137,7 @@
 
     move v6, v9
 
-    invoke-direct/range {v1 .. v6}, Lcom/android/server/lights/LightsService$LightImpl;->setLightLocked(IIIII)V
+    invoke-direct/range {v1 .. v6}, Lcom/android/server/lights/LightsService$LightImpl;->setLightLocked(IIIIIZ)V
 
     monitor-exit p0
 
@@ -252,7 +252,7 @@
 
     move v6, v9
 
-    invoke-direct/range {v1 .. v6}, Lcom/android/server/lights/LightsService$LightImpl;->setLightLocked(IIIII)V
+    invoke-direct/range {v1 .. v6}, Lcom/android/server/lights/LightsService$LightImpl;->setLightLocked(IIIIIZ)V
 
     monitor-exit p0
 
@@ -312,7 +312,7 @@
 
     move v6, v9
 
-    invoke-direct/range {v1 .. v6}, Lcom/android/server/lights/LightsService$LightImpl;->setLightLocked(IIIII)V
+    invoke-direct/range {v1 .. v6}, Lcom/android/server/lights/LightsService$LightImpl;->setLightLocked(IIIIIZ)V
 
     monitor-exit p0
 
@@ -374,7 +374,7 @@
 
     move v6, v9
 
-    invoke-direct/range {v1 .. v6}, Lcom/android/server/lights/LightsService$LightImpl;->setLightLocked(IIIII)V
+    invoke-direct/range {v1 .. v6}, Lcom/android/server/lights/LightsService$LightImpl;->setLightLocked(IIIIIZ)V
 
     .end local v0    # "rom_max_brightness":I
     .end local v10    # "color":I
