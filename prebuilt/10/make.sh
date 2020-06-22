@@ -10,6 +10,15 @@ $thispath/../../scripts/apex_extractor.sh $1/apex
 # Copy system files
 rsync -ra $thispath/system/ $systempath
 
+rm -rf $1/apex/com.android.apex.cts.shim.apex
+rm -rf $1/apex/com.android.conscrypt.apex
+rm -rf $1/apex/com.android.media.apex
+rm -rf $1/apex/com.android.media.swcodec.apex
+rm -rf $1/apex/com.android.resolv.apex
+rm -rf $1/apex/com.android.runtime.release.apex
+rm -rf $1/apex/com.android.tzdata.apex
+
+
 # Overlays
 if [ ! -d  $1/product ]; then
     rm -rf $1/product
